@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Loan Calculator</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container mt-3">
+      <!-- Content here -->
+      <div class="row">
+        <div class="col-md-6 mx-auto ">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h1 class="card-title text-center pb-3">Loan Calculator</h1>
+              <form id="loanform">
+                <div class="form-group">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">$</span>
+                    <input type="number" class="form-control" id="loanamount" placeholder="Loan Amount" aria-label="Loan Amount" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">%</span>
+                    <input type="number" class="form-control" id="annualinterest" placeholder="Annual Interest" aria-label="Annual Interest" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="repayementyears" placeholder="Repayement Years" aria-label="Repayement Years" aria-describedby="basic-addon2">
+                  </div>
+                  <div class="d-grid gap-2 mb-3">
+                    <button class="btn btn-primary btn-dark" type="text-center">Calculate</button>
+                  </div>
+                </div>
+              </form>
+              <div id ="loader" style="display: none;">
+                <image src="img/loading.gif" class="rounded mx-auto d-block" ></image>
+              </div>
+              <form id ="result-form" style="display: none;">
+                  <div class="row mb-3 pb-3">
+                    <h5 class="card-title text-center ">Resultat</h5>
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">Loan</span>
+                      <input type="number" id="loan" class="form-control" disabled>
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+    <script src="app.js"></script>
+  </body>
+</html>
